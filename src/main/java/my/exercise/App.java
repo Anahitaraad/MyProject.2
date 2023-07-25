@@ -25,6 +25,35 @@ public class App
         System.out.println(exe6);
         String exe7 = exe6.toLowerCase();
         System.out.println(exe7);
+        String exe8 = "Java is the worst programming language!";
+        System.out.println("The new replacing text is:" + exe8.replaceAll("worst","best"));
+        String exe9 = "\tJ\ta\tv\ta\t";
+        System.out.println(exe9.trim()) ;
+        // trim can work on reduce space
+        String exe10 = "20";
+        System.out.println(exe10.concat("20"));
+        String exe11 = "oil and water";
+        System.out.println(exe11.substring(0,3));
+        String exe12 = "Carl,Susie,Fredrik,Bob,Erik";
+        String[] arrayExe12 = exe12.split(",");
+        for(int i=0; i<arrayExe12.length; i++){
+            System.out.println(arrayExe12[i] + " ");
+        }
+        String exe13 = "ThisShouldBeConverted";
+        char[] exe13ToArr = exe13.toCharArray();
+
+        for(int i=0; i<exe13ToArr.length; i++){
+            System.out.print(exe13ToArr[i] );
+        }
+
+        System.out.println();
+
+        char[] exe14 = {'J','A','V','A'};
+        String exe14Str = "";
+        for(int i=0; i<exe14.length; i++){
+            exe14Str += exe14[i];
+        }
+        System.out.println(exe14Str);
 
 
     }
