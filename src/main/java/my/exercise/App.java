@@ -6,55 +6,53 @@ import java.sql.SQLOutput;
  * Hello world!
  *
  */
-public class App 
-{
-    public static void main( String[] args )
-    {
+public class App {
+    public static void main( String[] args ) {
         String arg = "mine";
         char charArg = 'm';
-        String exe1 = "Anna";
-        System.out.println("The length is:" + exe1.length() );
-        String exe2 = "Long example sentence" ;
-        System.out.println("The exe2 char 6th is:"+exe2.charAt(6));
-        String exe3 = "Even longer example sentence" ;
-        System.out.println("The number of char o is:" + exe3.indexOf('o') );
-        String exe4 = "Ok this is not as long!" ;
-        System.out.println("The new text is:"+ exe4.substring(11,22));
-        String exe5 = "caps equals screaming";
-        String exe6 = exe5.toUpperCase();
-        System.out.println(exe6);
-        String exe7 = exe6.toLowerCase();
-        System.out.println(exe7);
-        String exe8 = "Java is the worst programming language!";
-        System.out.println("The new replacing text is:" + exe8.replaceAll("worst","best"));
-        String exe9 = "\tJ\ta\tv\ta\t";
-        System.out.println(exe9.trim()) ;
+
+        String item1 = "Anna";
+        System.out.println("The length of item1 is:" + item1.length() );
+        String item2 = "Long example sentence" ;
+        System.out.println("The item2's character 6th is:"+item2.charAt(6));
+        String item3 = "Even longer example sentence" ;
+        System.out.println("The number of character 'o' in item3 is:" + item3.indexOf('o') );
+        String item4 = "Ok this is not as long!" ;
+        System.out.println("The substring(11,12) of item4 is:"+ item4.substring(11,22)); //it divided text to the indexes number
+        String item5 = "caps equals screaming";
+        String item6 = item5.toUpperCase();
+        System.out.println("The uppercase of item5 is: " + item6);
+        String item7 = item6.toLowerCase();
+        System.out.println("The lower case of item6 is: " + item7);
+        String item8 = "Java is the worst programming language!";
+        System.out.println("The new replacing text of item8 is:" + item8.replaceAll("worst","best"));
+        String item9 = "\tJ\ta\tv\ta\t";
+        System.out.println("The trim of item9 is: " + item9.trim()) ;
         // trim can work on reduce space
-        String exe10 = "20";
-        System.out.println(exe10.concat("20"));
-        String exe11 = "oil and water";
-        System.out.println(exe11.substring(0,3));
-        String exe12 = "Carl,Susie,Fredrik,Bob,Erik";
-        String[] arrayExe12 = exe12.split(",");
-        for(int i=0; i<arrayExe12.length; i++){
-            System.out.println(arrayExe12[i] + " ");
+        String item10 = "20";
+        System.out.println("The concat of item10 with 20 is:" + item10.concat("20"));//add sth
+        String item11 = "oil and water";
+        System.out.println("The substring of(0,10) item11 is: " + item11.substring(0,3));
+        String item12 = "Carl,Susie,Fredrik,Bob,Erik";
+        String[] arrayItem12 = item12.split(",");//divided the text by ','
+        System.out.print("The split form by ',' in item12 is: ");
+        for(int i=0; i<arrayItem12.length; i++){
+            System.out.print(arrayItem12[i] + ' ' );
         }
-        String exe13 = "ThisShouldBeConverted";
-        char[] exe13ToArr = exe13.toCharArray();
-
-        for(int i=0; i<exe13ToArr.length; i++){
-            System.out.print(exe13ToArr[i] );
-        }
-
         System.out.println();
+        String item13 = "ThisShouldBeConverted";
+        char[] item13ToArr = item13.toCharArray();
 
-        char[] exe14 = {'J','A','V','A'};
-        String exe14Str = "";
-        for(int i=0; i<exe14.length; i++){
-            exe14Str += exe14[i];
+        for(int i=0; i<item13ToArr.length; i++){
+            System.out.print(item13ToArr[i] );
         }
-        System.out.println(exe14Str);
-
+        System.out.println();
+        char[] item14 = {'J','A','V','A'};
+        String item14Str = "  ";
+        for(int i=0; i<item14.length; i++){
+            item14Str += item14[i];
+        }
+        System.out.println(item14Str);
 
     }
 }
