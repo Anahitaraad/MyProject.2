@@ -40,12 +40,25 @@ public class App {
             System.out.print(arrayItem12[i] + ' ' );
         }
         System.out.println();
-        String item13 = "ThisShouldBeConverted";
+        String item13 = "ThisShouldBe,Converted";
         char[] item13ToArr = item13.toCharArray();
 
-        for(int i=0; i<item13ToArr.length; i++){
-            System.out.print(item13ToArr[i] );
-        }
+
+        String inputString = "ThisShouldBe,Converted";
+        char[] charArray = inputString.toCharArray();
+
+        System.out.println("Original String: " + inputString);
+        System.out.print("Char Array: [");
+
+        for (int i = 0; i < charArray.length; i++) {
+            System.out.print("'" + charArray[i] + "'");
+            if (i < charArray.length - 1) {
+                    }
+                }
+
+        System.out.println("]");
+        
+
         System.out.println();
         char[] item14 = {'J','A','V','A'};
         String item14Str = "  ";
